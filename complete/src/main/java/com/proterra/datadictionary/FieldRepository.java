@@ -1,12 +1,11 @@
-package com.example.accessingdatamysql;
+package com.proterra.datadictionary;
 
+import com.proterra.datadictionary.domain.Field;
 import org.springframework.data.repository.CrudRepository;
-
-import com.example.accessingdatamysql.User;
 
 // This will be AUTO IMPLEMENTED by Spring into a Bean called userRepository
 // CRUD refers Create, Read, Update, Delete
 
-public interface UserRepository extends CrudRepository<User, Integer> {
+public interface FieldRepository extends CrudRepository<Field, String> {
 
 }
